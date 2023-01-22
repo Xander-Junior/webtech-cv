@@ -1,0 +1,173 @@
+/* .tab a {
+    color: white;
+    text-decoration: none;
+    float: left;
+    padding: 8px 16px;
+    transition: 0.3s;
+  }
+  
+  .tab a:hover {
+    background-color: purple;
+    color: white;
+  }
+  
+  .tab a.active {
+    background-color: purple;
+    color: white;
+  }
+  
+  .tab a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #ff85ff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .tab a:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+  .tab a.active::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+
+   a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff11ff, 0 0 70px #ff11ff, 0 0 80px #ff11ff, 0 0 100px #ff11ff;
+    transform: scale(1.1);
+  } */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&family=Lora&display=swap');
+
+/* Set the font for the entire page */
+body {
+  font-family: 'Lora', serif;
+  background-image: url("./images/sep11.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  animation: color-change 5s ease-in-out infinite;
+  transition: color 0.5s ease; /* Specifies the transition effect for the color property */
+}
+
+.introduction:hover {
+    color: white; /* Color of the text on hover */
+  }
+
+
+@keyframes color-change {
+  0% {
+    color: white;
+  }
+  50% {
+    color: rgb(244, 108, 4);
+  }
+  30%{
+    color: rgb(18, 33, 66);
+  }
+  100% {
+    color: rgb(227, 228, 236);
+  }
+}
+
+/* Style the introduction section */
+.introduction {
+  text-align: center;
+  margin: 70px 0;
+}
+
+/* Style the greeting */
+.greeting {
+  font-family: 'Jura', sans-serif;
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+
+/* Style the name */
+.name {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style the objective */
+.objective {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* .introduction {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+} */
+
+
+.introduction {
+    text-align: center;
+    margin-top: 250px;
+    width: 50%;
+    margin-left: 300px;
+    margin-bottom: -20px;
+}
+
+.more-about-me {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  .animated-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    animation: arrow-bounce 1s ease-in-out infinite;
+  }
+  
+  .down-arrow {
+    border: solid rgb(255, 111, 0);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+  }
+  
+  @keyframes arrow-bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
