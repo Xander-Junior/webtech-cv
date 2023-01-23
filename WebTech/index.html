@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTech - Obed's CV</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<!-- <style>
+    /* Add CSS styles here */
+    div {
+      background-color: black;
+      color: white; /* Set the text color to white */
+    }
+    a:link, a:visited {
+      color: #c32aff; /* Set the link color to neon purple */
+      text-decoration: none; /* Remove underline from links */
+      padding: 14px 25px; /* Add padding to the links */
+      display: inline-block; /* Display the links as inline-block elements */
+    }
+    a:hover, a:active {
+      background-color: #F333FF; /* Set the background color to neon purple on hover */
+      color: #33FFFC; /* Set the text color to black on hover */
+    }
+  </style> -->
+  <script>
+   var currentScrollPosition = window.pageYOffset;
+
+// Listen for scroll events on the page
+window.addEventListener("scroll", function() {
+    // Get the new scroll position
+    var newScrollPosition = window.pageYOffset;
+
+    // Check if the user has scrolled down past a certain threshold
+    if (newScrollPosition > currentScrollPosition + 20) {
+        // Redirect the user to a different webpage
+        window.location = "about.html";
+    }
+
+    // Update the current scroll position
+    currentScrollPosition = newScrollPosition;
+});
+
+</script>
+<body>
+    <div class="introduction">
+        <h1 class="greeting">Welcome to my website!</h1>
+        <h2 class="name"> My name is Obed Yiadom Boakye</h2>
+        <p class="objective">
+            "I am excited to share a bit about myself with you. I am currently a computer science student at Ashesi University and have a passion for using technology to make a positive impact in my community. My goal for this website is to share my experiences and projects with you, as well as provide resources for those interested in the field of computer science. Thank you for visiting and I hope you enjoy exploring my website."
+        </p>
+
+        <div class="more-about-me">More about me</div>
+            <a href="about.html" class="animated-arrow">
+            <i class="down-arrow"></i>
+            </a>
+      </div>
+
+    
+      
+</body>
+</html>
